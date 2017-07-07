@@ -7,7 +7,6 @@ public class Student implements Comparable<Student>{
 	private int kor;
 	private int math;
 	private int eng;
-	fffffffff
 	
 	
 	
