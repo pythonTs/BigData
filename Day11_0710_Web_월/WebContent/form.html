@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- form태그
+	1. 입력양식들을 묶어주는 태그
+	2. input태그 : 기본 입력 양식 태그, type속성으로 유형구분, 인라인태그
+	3.  #text값 : 텍스트입력
+		#password값 : 입력내용을 가림
+	4.  #submit값 : 서버로 폼태그 내용을(입력양식들) 전송 //클라이언트->서버로 데이터전송 // 주소에 ?생성
+		#reset값 : 입력한 값을 초기화
+		#button값 : 전송될 내용이 2개이상이면 button속성사용 
+	5.  submit, reset속성은 1개의 form태그에 1개밖에 존재할수 없음
+	6.  #action값 : form태그에 데이터 전송위치를 설정 //주소에 form.jsp?생성
+	7.	#name속성 : 전송데이터를 구분하는 속성 //주소에 form.jsp?id=1234&pwd=1234 생성
+	8.	#value속성 : input데이터의 초기값을 설정 // 주소에 form.jsp?id=test&name=조태상&pwd=1234
+	9.  #method속성 : 요청파라미터를 보임유무 (기본값 : get, post는 요청파라미터 안보임)
+	9.2 file,회원가입정보 ->post방식
+	http://localhost:7777/Day11_0710_Web_%EC%9B%94/form.jsp
+	프로토콜://IP(or DName):port번호/Web프로젝트명/파일명(jsp,html)
+	
+	?id=test&name=%EC%A1%B0%ED%83%9C%EC%83%81&pwd=1234
+	?요청파라미터
+	
+	https://www.naver.com/
+	http://www.naver.com:80/
+ 	-->
+	<form action="form.jsp" method="get">
+		<input type="text" name="id" value="test">
+		<input type="text" name="name" value="조태상">
+		<input type="password" name="pwd" value="1234">
+		
+		<input type="submit" value="회원가입">
+		<input type="reset" value="취소">
+		<input type="button" value="전송버튼2">
+	</form>
+	<!-- 입력 : Scanner -> Web버튼
+	 -->
+</body>
+</html>
